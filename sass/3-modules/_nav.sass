@@ -1,4 +1,33 @@
-.menu
-  &.expanded
-    @media screen and (min-width: 800px)
-      width: auto
+.top-bar
+  padding: 1.5rem 0rem
+  background-color: #fff
+
+  &-left
+    @media screen and (max-width: 39.9375em)
+      text-align: center
+
+    .logo
+      padding: 0 0.313rem
+      display: inline-block
+
+  &-right
+    @media screen and (max-width: 39.9375em)
+      text-align: center
+
+    .menu
+      @media screen and (max-width: 39.9375em)
+        margin: 0.7rem -0.875rem 0
+        display: inline-block
+
+      background-color: $white
+      li
+        a
+          @media screen and (max-width: 39.9375em)
+            font-size: 0.6rem
+          font-size: 0.875rem
+          text-transform: uppercase
+          font-weight: bold
+          color: $brown
+
+          &:hover, &:active
+            color: $skyblue
