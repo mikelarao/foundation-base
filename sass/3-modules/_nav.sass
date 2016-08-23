@@ -1,5 +1,7 @@
 .top-bar
-  padding: 1.5rem 0rem
+  padding: 0.8rem 0rem
+  @media screen and (min-width: 40em)
+    padding: 1.5rem 0rem
   background-color: #fff
 
   &-left
@@ -23,11 +25,12 @@
       li
         a
           @media screen and (max-width: 39.9375em)
-            font-size: 0.6rem
+            font-size: 0.7rem
           font-size: 0.875rem
           text-transform: uppercase
           font-weight: bold
           color: $brown
 
-          &:hover, &:active
+          &:hover, &:focus
             color: $skyblue
+            background-color: $white!important

@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   // -------------- Main Menu Jquery
 
   $(".navbar-nav li").each( function() {
@@ -89,6 +90,17 @@ $(document).ready(function(){
   //         $(".navbar").removeClass("navbar-fixed-top");
   //     }
   // });
+
+
+
+    $(window).scroll(function(e){
+      parallaxScroll();
+    });
+    function parallaxScroll(){
+      var scrolled = $(window).scrollTop();
+      $('.callout--parralax-1').css('top',(0-(scrolled*.3))+'px');
+    }
+
 
 });
 

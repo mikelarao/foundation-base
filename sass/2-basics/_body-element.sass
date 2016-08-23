@@ -7,10 +7,21 @@ body
     font-size: 16px
   line-height: 1.6
   font-family: $roboto
-  color: #666
+  color: $black
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 
 
 .row
   max-width: 60.625em
+
+
+.no-js .top-bar
+  display: none
+
+@media screen and (min-width: 40em)
+  .no-js .top-bar
+    display: block
+
+  .no-js .title-bar
+    display: none
