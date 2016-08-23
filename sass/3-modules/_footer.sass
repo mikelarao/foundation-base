@@ -1,0 +1,58 @@
+.footer
+  background-color: #2e2d2d
+  color: $dbrown
+  padding: 1.5rem 0
+  @media screen and (min-width: 64em)
+    padding: 3.125em 0
+
+  &--menu
+    display: inline-block
+    list-style: none
+    padding-left: 0px
+    margin-left: 0px
+    margin-bottom: 0.1rem
+
+    li
+      float: left
+
+      &+li
+        a
+          border-left: 1px solid $dbrown
+
+      &:first-child
+        a
+          padding: 0 10px 0px 0px
+
+      a
+        padding: 0 10px
+        color: $dbrown
+        font-size: 0.750rem
+
+  &--social
+    margin-top: 1rem
+    @media screen and (min-width: 40em)
+      float: right
+      margin-top: 0px
+    list-style: none
+    padding-left: 0px
+    margin-left: 0px
+    margin-bottom: 0px
+
+    li
+      float: left
+      font-size: 0.692rem
+      text-transform: uppercase
+
+      &:first-child
+        padding: 4.5px
+
+      a
+        margin: 0 4.5px
+
+  .copyright
+    font-size: 0.750rem
+    color: #676767
+    margin-bottom: 0px
+
+    a
+      color: $white
